@@ -29,6 +29,7 @@ export function Board() {
   let [clicked, setClick] = useState(false);
   const [playerName, setPlayerName] = useState("");
   const [playerScore, setPlayerScore] = useState(0);
+
   const increase = (id) => {
     let updateScores = scores.map((score) => {
       if (score.id == id) {
@@ -59,6 +60,7 @@ export function Board() {
     console.log("updateScores:", updateScores);
     setScores(updateScores);
   };
+
   const showAddPlayer = () => {
     console.log(clicked);
     clicked = !clicked;
@@ -93,6 +95,7 @@ export function Board() {
     }
     console.log(scores);
   };
+
   return (
     <div className={styles.cardContainer}>
       {scores.map((player, index) => {

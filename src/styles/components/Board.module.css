@@ -1,0 +1,13 @@
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.cardContainer button {
+  padding: 7px;
+  border-radius: 90px;
+  border: none;
+  margin: 5px;
+  background-color: rgb(47, 190, 47);
+  font-size: 20px;
+}
